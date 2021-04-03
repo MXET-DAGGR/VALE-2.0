@@ -1,0 +1,30 @@
+Starting from the encoders:
+1. Encoder Left & Encoder Right go to the I2C PCB
+	- Black	= Ground
+	- Purple= 3.3 Volts
+	- Gray	= SCK
+	- White	= SDA
+	- Green	= 3.3 Volts
+	- Blue	= Ground
+
+2. The IC2 PCB wires go...... 		--> to the RP4
+	- The Black Wire is ground 	--> Pin 6,9,14,20,25,30,35,or 39
+	- The Red Wire is 3.3 Volts 	--> Pin 1 or 17
+	- The White Wire is SCL		--> Pin 5
+	- The Yellow Wire is SDA	--> Pin 3
+
+3. The left and right motor wires go to the H-Bridge.
+	**This is the Output side of H-Bridge**
+	- Out1 	--> left motor ground
+	- Out2 	--> left motor power
+	- Vcc 	--> power source (6.5 to 24 Volts)
+	- Gnd  	--> Pin 6,9,14,20,25,30,35,or 39
+	- Out3 	--> right motor power
+	- Out4 	--> right motor ground
+
+4. The H-Bridge Wires go.....		--> to the RP4
+	- Input 1 is left motor signal	--> Pin 12
+	- Input 2 is left motor ground	--> Pin 6,9,14,20,25,30,35,or 39
+	- Input 3 is right motor signal	--> Pin 13
+	- Input 4 is right motor ground --> Pin 6,9,14,20,25,30,35,or 39
+	***(The H-Bridge receives PWM; varying the DC changes motor speed)***
