@@ -1,2 +1,2 @@
 # Project-Code
-This project is only intended to be used by Team DAGGR.
+This is the github repository for team D.A.G.G.R for the VALE 2.0 capstone project.
